@@ -1,0 +1,19 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/d:App_Start/f:DependencyContainer.cs" caret="114" fromTop="5" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/d:Infrastructure/d:Mapper/d:Base/f:MapperRegistration.cs" caret="96" fromTop="5" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/d:Infrastructure/d:OAuth/f:AuthorizationBearerFilter.cs" caret="166" fromTop="6" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/d:Infrastructure/d:Dto/f:LogItemDto.cs" caret="226" fromTop="8" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/d:Infrastructure/d:Mapper/f:LogItemMapperConfiguration.cs" caret="646" fromTop="14" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/f:Startup.cs" caret="1626" fromTop="13" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/f:Startup.cs" caret="441" fromTop="6" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/d:App_Start/f:DependencyContainer.cs" caret="114" fromTop="5" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/d:Infrastructure/d:Mapper/d:Base/f:MapperRegistration.cs" caret="96" fromTop="5" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/d:Infrastructure/d:OAuth/f:AuthorizationBearerFilter.cs" caret="166" fromTop="6" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/f:Startup.cs" caret="35" fromTop="1" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/f:Startup.cs" caret="1626" fromTop="13" />
+    <File id="6B0E01D6-468A-4C82-8196-62552E100169/d:Infrastructure/d:Dto/f:LogItemDto.cs" caret="226" fromTop="8" />
+  </RecentEdits>
+</RecentFiles>
