@@ -5,9 +5,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{<%= solutionGuid %>}") = "MagicAir.Web", "MagicAir.Web\MagicAir.Web.csproj", "{<%= assemblyWebGuid %>}"
 EndProject
 Project("{<%= solutionGuid %>}") = "MagicAir.Data", "MagicAir.Data\MagicAir.Data.csproj", "{<%= assemblyDataGuid %>}"
-	ProjectSection(ProjectDependencies) = postProject
-		{<%= assemblyModelsGuid %>} = {<%= assemblyModelsGuid %>}
-	EndProjectSection
 EndProject
 Project("{<%= solutionGuid %>}") = "MagicAir.Models", "MagicAir.Models\MagicAir.Models.csproj", "{<%= assemblyModelsGuid %>}"
 EndProject

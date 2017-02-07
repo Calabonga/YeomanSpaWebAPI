@@ -78,10 +78,11 @@ module.exports = Generator.extend({
       this.destinationPath(".gitignore")
     );
 
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath("solution.sln"),
       this.destinationPath(this.props.appName + ".sln"),
       {
+        globOptions: { dot: true },
         solutionGuid: this.solutionGuid,
         assemblyWebGuid : this.props.assemblyWebGuid,
         assemblyDataGuid: this.props.assemblyDataGuid,

@@ -6,9 +6,7 @@ var mkdirp = require('mkdirp');
 
 module.exports = Generator.extend({
 
-  initializing: function () {
-    this.props = {};
-  },
+  initializing: function () { },
 
   prompting: function () { },
 
@@ -18,12 +16,33 @@ module.exports = Generator.extend({
 
   writing: function () {
 
-    mkdirp(this.options.props.appName +"/" +this.options.props.appName + '.Models');
+    var webPath = this.options.props.appName + "/" + this.options.props.appName + ".Models";
+    mkdirp(webPath);
 
-    // this.fs.copy(
-    //   this.templatePath('dummyfile.txt'),
-    //   this.destinationPath('dummyfile.txt')
-    // );
+    this.fs.copyTpl(
+      this.templatePath("Models.csproj"),
+      this.destinationPath(webPath + "/" + this.options.props.appName + ".Models.csproj"),
+      {
+        globOptions: { dot: true },
+        projectGuid: this.options.props.projectDataGuid.toUpperCase(),
+        projectName: this.options.props.appName
+      }
+    );
+    this.fs.copy(
+      this.templatePath('staticRoot/**/*.*'),
+      this.destinationPath(webPath),
+      { globOptions: { dot: true } }
+    );
+    this.fs.copyTpl(
+      this.templatePath("root/**/*.*"),
+      this.destinationPath(webPath),
+      {
+        globOptions: { dot: true },
+        projectName: this.options.props.appName,
+        year: new Date().getFullYear(),
+        assemblyGuid: this.options.props.assemblyWebGuid.toUpperCase()
+      }
+    );
   },
   conflicts: function () { },
 

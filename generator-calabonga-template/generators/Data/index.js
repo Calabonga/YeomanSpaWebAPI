@@ -21,11 +21,6 @@ module.exports = Generator.extend({
     var webPath = this.options.props.appName + "/" + this.options.props.appName + ".Data";
     mkdirp(webPath);
 
-    // this.fs.copy(
-    //   this.templatePath('staticRoot/**/*.*'),
-    //   this.destinationPath(webPath),
-    //   { globOptions: { dot: true } }
-    // );
     this.fs.copyTpl(
       this.templatePath("Data.csproj"),
       this.destinationPath(webPath + "/" + this.options.props.appName + ".Data.csproj"),

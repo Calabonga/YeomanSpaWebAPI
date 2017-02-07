@@ -1,7 +1,7 @@
 ﻿using System;
 using YeomanTemplate.Models.Infrastructure;
 
-namespace YeomanTemplate.Models.Base {
+namespace <%= projectName %>.Models.Base {
 
     /// <summary>
     /// Represents the creation date and last update info as implementation for <see cref="IAuditable"/>
