@@ -1,11 +1,11 @@
 {
-  "name": "generator-calabonga-template",
+  "name": "calabonga-spa-webapi",
   "version": "1.0.0",
-  "description": "This is a demo for purpose only",
+  "description": "This package creates a Visual Studio 2015 solution with three projects with layers.",
   "homepage": "http://www.calabonga.net",
   "author": {
-    "name": "Calabonga SOFT",
-    "email": "calabonga@outlook.com",
+    "name": "Calabonga",
+    "email": "dev@calabonga.net",
     "url": "http://www.calabonga.net"
   },
   "files": [
@@ -13,9 +13,15 @@
   ],
   "main": "generators/app/index.js",
   "keywords": [
-    "test",
+    "webapi",
+    "spa",
+    "bearer",
+    "token",
+    "mapper",
+    "oauth",
+    "visual studio",
     "generator",
-    "mvc.aspnet",
+    "mvc",
     "yeoman-generator"
   ],
   "dependencies": {
@@ -46,10 +52,6 @@
       "mocha": true
     }
   },
-  "repository": "calabonga/generator-calabonga-template",
-  "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
-  },
+  "repository": "calabonga/calabonga-spa-webapi",
   "license": "MIT"
 }
