@@ -37,28 +37,9 @@ module.exports = Generator.extend({
     }]).then((answers) => {
       this.props.appName = _.upperFirst(answers.name);
       this.log('app name', answers.name);
-
       this.props.useGit = answers.useGit;
       this.props.root = this.destinationRoot();
     });
-
-
-    var prompts = [{
-      type: 'confirm',
-      name: 'useOwinPackage',
-      message: '',
-      default: true
-    }, {
-      type: "input",
-      name: "applicationName",
-      message: "Enter solution name?",
-      default: "Calabonga.Template"
-    }];
-
-    return this.prompt(prompts).then(function (props) {
-      // To access props later use this.props.useOwinPackage;
-      this.props = props;
-    }.bind(this));
   },
 
   configuring: function () { },
@@ -83,10 +64,11 @@ module.exports = Generator.extend({
       this.destinationPath(this.props.appName + ".sln"),
       {
         globOptions: { dot: true },
-        solutionGuid: this.solutionGuid,
-        assemblyWebGuid : this.props.assemblyWebGuid,
-        assemblyDataGuid: this.props.assemblyDataGuid,
-        assemblyModelsGuid: this.props.assemblyModelsGuid
+        projectName: this.props.appName,
+        solutionGuid: this.props.solutionGuid.toUpperCase(),
+        assemblyWebGuid : this.props.assemblyWebGuid.toUpperCase(),
+        assemblyDataGuid: this.props.assemblyDataGuid.toUpperCase(),
+        assemblyModelsGuid: this.props.assemblyModelsGuid.toUpperCase()
        }
     );
   },

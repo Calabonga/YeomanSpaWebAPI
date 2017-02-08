@@ -2,11 +2,11 @@
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{<%= solutionGuid %>}") = "MagicAir.Web", "MagicAir.Web\MagicAir.Web.csproj", "{<%= assemblyWebGuid %>}"
+Project("{<%= solutionGuid %>}") = "<%= projectName %>.Web", "<%= projectName %>\<%= projectName %>.Web\<%= projectName %>.Web.csproj", "{<%= assemblyWebGuid %>}"
 EndProject
-Project("{<%= solutionGuid %>}") = "MagicAir.Data", "MagicAir.Data\MagicAir.Data.csproj", "{<%= assemblyDataGuid %>}"
+Project("{<%= solutionGuid %>}") = "<%= projectName %>.Data", "<%= projectName %>\<%= projectName %>.Data\<%= projectName %>.Data.csproj", "{<%= assemblyDataGuid %>}"
 EndProject
-Project("{<%= solutionGuid %>}") = "MagicAir.Models", "MagicAir.Models\MagicAir.Models.csproj", "{<%= assemblyModelsGuid %>}"
+Project("{<%= solutionGuid %>}") = "<%= projectName %>.Models", "<%= projectName %>\<%= projectName %>.Models\<%= projectName %>.Models.csproj", "{<%= assemblyModelsGuid %>}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -30,6 +30,13 @@ module.exports = Generator.extend({
         projectName: this.options.props.appName
       }
     );
+
+    this.fs.copy(
+      this.templatePath('staticRoot/**/*.*'),
+      this.destinationPath(webPath),
+      { globOptions: { dot: true } }
+    );
+
     this.fs.copyTpl(
       this.templatePath("root/**/*.*"),
       this.destinationPath(webPath),
