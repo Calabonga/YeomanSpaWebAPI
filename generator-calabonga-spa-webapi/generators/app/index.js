@@ -54,7 +54,7 @@ module.exports = Generator.extend({
     this.composeWith(require.resolve('../Web'), { props: this.props });
 
     this.fs.copy(
-      this.templatePath('.gitignore'),
+      this.templatePath('gitignore'),
       this.destinationPath(".gitignore")
     );
 

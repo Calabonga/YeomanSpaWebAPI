@@ -1,6 +1,6 @@
 {
   "name": "generator-calabonga-spa-webapi",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This package will creates a Visual Studio 2015 solution with splitted layers. During Installation you can select your solution name.",
   "homepage": "http://www.calabonga.net",
   "author": {
