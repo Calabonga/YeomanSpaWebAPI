@@ -1,9 +1,9 @@
-# calabonga-spa-webapi [![NPM version][npm-image]] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> This package creates a Visual Studio 2015 solution with three projects with layers.
+# calabonga-spa-webapi [NPM version]
 
-* {YouSolutionName}.Models
-* {YouSolutionName}.Data
-* {YouSolutionName}.Web
+This package will creates a Visual Studio 2015 solution with splitted layers. During Installation you can select your solution {YouSolutionName} name. {YouSolutionName} will contains three projects:
+* {YouSolutionName}.Models (class library)
+* {YouSolutionName}.Data (class library)
+* {YouSolutionName}.Web (ASP.NET WebAPI)
 
 ## Installation
 
@@ -19,6 +19,12 @@ Then generate your new project:
 ```bash
 yo calabonga-template
 ```
+## Usage
+
+After solution created, open it in Visual Studio 2015. Open Package Manager Console then execute command
+```bash
+install-package -reinstall
+```
 
 ## Information
 You can read [post](http://www.calabonga.net/blog/post/186) (russian) about framework which used in the package. Feel free to [write to author](http://www.calabonga.net/site/feedback) by feedback form.
@@ -29,7 +35,4 @@ MIT © [Calabonga SOFT](http://www.calabonga.net)
 
 
 [npm-url]: https://npmjs.org/package/calabonga-spa-webapi
-[travis-image]: https://travis-ci.org/calabonga/calabonga-spa-webapi.svg?branch=master
-[travis-url]: https://travis-ci.org/calabonga/calabonga-spa-webapi
-[daviddm-image]: https://david-dm.org/calabonga/calabonga-spa-webapi.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/calabonga/calabonga-spa-webapi
+
