@@ -1,4 +1,4 @@
-# calabonga-spa-webapi v1.0.6
+# calabonga-spa-webapi v1.0.7
 
 This package will creates a Visual Studio 2015 solution with splitted layers. During Installation you can select your solution {YouSolutionName} name. {YouSolutionName} will contains three projects:
 
@@ -30,10 +30,13 @@ update-package -reinstall
 ## Information
 You can read [post](http://www.calabonga.net/blog/post/186) (russian) about framework which used in the package. Feel free to [write to author](http://www.calabonga.net/site/feedback) by feedback form.
 
+## Versions
+* 1.0.0 First release
+* 1.0.7 GitHub link updated
+
 ## License
 
 MIT © [Calabonga SOFT](http://www.calabonga.net)
-
 
 [npm-url]: https://npmjs.org/package/calabonga-spa-webapi
 
