@@ -69,9 +69,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\YeomanTemplate.Models\YeomanTemplate.Models.csproj">
-      <Project>{5132efe7-c20a-4e81-b7f5-11e178f6cae2}</Project>
-      <Name>YeomanTemplate.Models</Name>
+    <ProjectReference Include="..\<%= projectName %>.Models\<%= projectName %>.Models.csproj">
+      <Project>{<%= projectModelsGuild %>}</Project>
+      <Name><%= projectName %>.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

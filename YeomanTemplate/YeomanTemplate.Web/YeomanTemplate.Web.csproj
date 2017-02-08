@@ -241,7 +241,6 @@
     <Compile Include="Infrastructure\QueryParams\QueryParamsModelBinder.cs" />
     <Compile Include="Infrastructure\Repositories\LogRepository.cs" />
     <Compile Include="Infrastructure\Services\Base\DefaultServiceSettings.cs" />
-    <Compile Include="Infrastructure\Services\Base\ExceptionHelper.cs" />
     <Compile Include="Infrastructure\Services\Base\FetchMode.cs" />
     <Compile Include="Infrastructure\Services\Base\IReadableRepository.cs" />
     <Compile Include="Infrastructure\Services\Base\IServiceSettings.cs" />

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{<%= projectGuid %>}</ProjectGuid>
+    <ProjectGuid>{AA4EA02B-9647-4102-BFC4-A78841E6A394}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace><%= projectName %></RootNamespace>
-    <AssemblyName><%= projectName %></AssemblyName>
+    <RootNamespace>YeomanTemplate.Data</RootNamespace>
+    <AssemblyName>YeomanTemplate.Data</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

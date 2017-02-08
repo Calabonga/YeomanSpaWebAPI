@@ -1,8 +1,7 @@
-using System;
+﻿using System;
 using System.Text;
 
-namespace YeomanTemplate.Web.Infrastructure.Helpers {
-
+namespace <%= projectName %>.Web.Infrastructure.Helpers {
     /// <summary>
     /// Exception Inner message helper
     /// </summary>

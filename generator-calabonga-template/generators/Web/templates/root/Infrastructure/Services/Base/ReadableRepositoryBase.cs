@@ -9,7 +9,6 @@ using Calabonga.PagedListLite;
 using YeomanTemplate.Data.Base;
 using YeomanTemplate.Models.Infrastructure;
 using YeomanTemplate.Web.Infrastructure.AppConfig;
-using YeomanTemplate.Web.Infrastructure.Helpers;
 
 namespace YeomanTemplate.Web.Infrastructure.Services.Base {
 
