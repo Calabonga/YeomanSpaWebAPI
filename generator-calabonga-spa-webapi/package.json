@@ -1,5 +1,5 @@
 {
-  "name": "calabonga-spa-webapi",
+  "name": "generator-calabonga-spa-webapi",
   "version": "1.0.0",
   "description": "This package creates a Visual Studio 2015 solution with three projects with layers.",
   "homepage": "http://www.calabonga.net",
