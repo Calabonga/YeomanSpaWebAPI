@@ -27,7 +27,8 @@ module.exports = Generator.extend({
       {
         globOptions: { dot: true },
         projectGuid: this.options.props.projectDataGuid.toUpperCase(),
-        projectName: this.options.props.appName
+        projectName: this.options.props.appName,
+        projectModelsGuild: this.options.props.assemblyModelsGuid.toUpperCase()
       }
     );
 
