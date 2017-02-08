@@ -33,7 +33,7 @@ module.exports = Generator.extend({
       type: 'confirm',
       name: 'useGit',
       message: 'Would you like to use git repository?',
-      default: false
+      default: true
     }]).then((answers) => {
       this.props.appName = _.upperFirst(answers.name);
       this.props.useGit = answers.useGit;
@@ -73,7 +73,11 @@ module.exports = Generator.extend({
   },
   conflicts: function () { },
 
-  install: function () { },
+  install: function () {
+    if(this.props.useGit){
+      this.spawnCommandSync('git', ['init', '--quiet']);
+    }
+  },
 
   end: function () {
     this.log(yosay('Work complete!'));
