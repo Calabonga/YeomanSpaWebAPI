@@ -7,10 +7,31 @@ var mkdirp = require('mkdirp');
 module.exports = Generator.extend({
 
   initializing: function () {
-    this.log(this.options)
+    this.props = {};
    },
 
-  prompting: function () { },
+  prompting: function () {
+    this.log(yosay(
+      chalk.yellow('Calabonga') + ' Web Project Generator!'
+    ));
+
+    return this.prompt([
+      {
+        type: 'input',
+        name: 'sqlName',
+        message: 'Connection string for DefaultConnection SQL-server [Data Source] required',
+        default: "SQL"
+      },
+      {
+        type: 'input',
+        name: 'sqlDatabaseName',
+        message: 'Connection string for DefaultConnection SQL-server [Initial Catalog] required',
+        default: "calabonga-yeoman-template"
+      }]).then((answers) => {
+        this.props.sqlName = answers.sqlName;
+        this.props.sqlDatabaseName = answers.sqlDatabaseName;
+      });
+  },
 
   configuring: function () { },
 
@@ -42,6 +63,8 @@ module.exports = Generator.extend({
         globOptions: { dot: true },
         projectName: this.options.props.appName,
         year: new Date().getFullYear(),
+        sqlName: this.props.sqlName,
+        sqlDatabaseName: this.props.sqlDatabaseName,
         assemblyGuid: this.options.props.assemblyWebGuid.toUpperCase()
       }
     );

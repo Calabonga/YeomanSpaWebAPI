@@ -10,13 +10,14 @@ namespace YeomanTemplate.Controllers {
     /// </summary>
     public class ValuesController : ApiController {
 
-        private readonly IAccountService _accountService;
+        private readonly ILogService _logService;
 
-        public ValuesController(IAccountService accountService) {
-            _accountService = accountService;
+        public ValuesController(ILogService logService) {
+            _logService = logService;
         }
 
         public IHttpActionResult Get() {
+            _logService.LogInfo("ILogService successfully injected to ApiController!");
             var items = new List<string>
             {
                 "Value 1",

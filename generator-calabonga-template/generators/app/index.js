@@ -21,7 +21,7 @@ module.exports = Generator.extend({
 
   prompting: function () {
     this.log(yosay(
-      'Welcome to the ' + chalk.yellow('Calabonga') + ' generator!'
+      chalk.yellow('Calabonga') + ' Solution Generator for Single Page Application over WebAPI'
     ));
 
     return this.prompt([{
@@ -36,7 +36,6 @@ module.exports = Generator.extend({
       default: false
     }]).then((answers) => {
       this.props.appName = _.upperFirst(answers.name);
-      this.log('app name', answers.name);
       this.props.useGit = answers.useGit;
       this.props.root = this.destinationRoot();
     });
@@ -77,6 +76,6 @@ module.exports = Generator.extend({
   install: function () { },
 
   end: function () {
-    this.log(yosay('Good boy!'));
+    this.log(yosay('Work complete!'));
   }
 });
